@@ -1,6 +1,20 @@
+// Datas from emailJS
 // template_8xxygbh
 // service_uq3yrup
 // gwWv5AXkV2U7NPQvQ
+
+let isModalOpen = false;
+let contrastToggle = false;
+
+function toggleContrast() {
+    contrastToggle = !contrastToggle;
+    if (contrastToggle) {
+        document.body.classList += " dark-theme"
+    }
+    else {
+        document.body.classList.remove("dark-theme")
+    }
+}
 
 function contact(event) {
     // Prevent the default action
@@ -28,8 +42,6 @@ function contact(event) {
     }, 1000);
 }
 
-
-let isModalOpen = false;
 function toggleModal() {
     if (isModalOpen) {
         isModalOpen = false;
