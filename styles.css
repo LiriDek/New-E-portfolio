@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -155,6 +158,10 @@ nav,
     background-color: #242424;
 }
 
+.dark-theme footer {
+    background-color: #3a3838;
+}
+
 .dark-theme .scroll__icon {
     border-color: white;
 }
@@ -223,9 +230,11 @@ nav,
     border: none;
     background-color: #242424;
     color: white;
-    position: absolute;
+    position: fixed;
     bottom: 32px;
     right: 40px;
+    z-index: 100;
+    box-shadow: 0 12px 30px 0 rgb(0, 0, 0, 0.28);
 }
 
 .scroll {
@@ -320,6 +329,10 @@ nav {
     visibility: hidden;
     z-index: -1;
     transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
+}
+
+.modal--open {
+    overflow-y: hidden;
 }
 
 .modal--open .modal {
@@ -488,6 +501,10 @@ nav {
 
 */
 
+.project {
+    padding: 20px 0;
+}
+
 .section__title {
     text-align: center;
     font-size: 48px;
@@ -584,6 +601,7 @@ footer {
     background-color: #242424;
     display: flex;
     padding: 6% 0;
+    position: relative;
 }
 
 .footer__row {
@@ -680,4 +698,57 @@ width = 80vw
 .shape--8 {
     top: 80vh;
     left: 80vw;
+}
+
+
+/* Small phones, tablets, large smart phones*/
+@media (max-width: 768px) {
+    .title {
+        font-size: 80px;
+    }
+    .header__para {
+        font-size: 20px;
+    }
+    .modal {
+        top: 0;
+        left: 0;
+        height: auto;
+        transform: none;
+        width: 100%;
+        flex-direction: column;
+        border-radius: 0;
+    }
+    .modal__half {
+        width: 100%;
+
+    }
+}
+
+/* Small phones */
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 52px;
+    }
+    .header__para {
+        font-size: 18px;
+    }
+    .nav__link:first-child {
+        display: none;
+    }
+    .project__description--para {
+        display: none;
+    }
+    .project__description {
+        left: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .project__description--sub-title {
+        margin-bottom: 8px;
+    }
+    .modal__half {
+        padding: 40px;
+    }
 }
