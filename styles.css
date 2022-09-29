@@ -501,7 +501,9 @@ nav {
 
 */
 
-
+.project {
+    padding: 20px 0;
+}
 
 .section__title {
     text-align: center;
