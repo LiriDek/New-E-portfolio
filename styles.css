@@ -156,7 +156,9 @@ nav,
     color: white;
 }
 
-.dark-theme section{
+.dark-theme section,
+.dark-theme header,
+.dark-theme .section__title{
     background-color: #242424;
 }
 
