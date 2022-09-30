@@ -82,8 +82,6 @@ p {
     margin-bottom: 12px;
     text-align: left;
     line-height: 1;
-    position: relative;
-    z-index: 10;
 }
 
 .orange {
@@ -157,7 +155,7 @@ nav,
 }
 
 .dark-theme section,
-.dark-theme header,
+.dark-theme .header__content,
 .dark-theme .section__title{
     background-color: #242424;
 }
@@ -199,6 +197,9 @@ nav,
     max-width: 1000px;
     padding: 0 30px;
     z-index: 1;
+}
+
+.header__content {
     background-color: rgb(245, 245, 245);
 }
 
