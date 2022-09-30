@@ -82,6 +82,8 @@ p {
     margin-bottom: 12px;
     text-align: left;
     line-height: 1;
+    position: relative;
+    z-index: 10;
 }
 
 .orange {
@@ -194,6 +196,8 @@ nav,
     width: 100%;
     max-width: 1000px;
     padding: 0 30px;
+    z-index: 1;
+    background-color: rgb(245, 245, 245);
 }
 
 .header__para {
@@ -509,6 +513,8 @@ nav {
     text-align: center;
     font-size: 48px;
     margin-bottom: 60px;
+    position: relative;
+    background-color: rgb(245, 245, 245);
 }
 
 .project__img {
